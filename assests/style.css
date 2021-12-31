@@ -185,7 +185,8 @@ nav a:hover::after{
     padding: 4px;
 }
 .contactform textarea{
-    height: 8vh;
+   height: 12vh;
+    resize: none;
     
 }
 .contactform .button{
