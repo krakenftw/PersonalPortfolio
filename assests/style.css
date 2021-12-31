@@ -166,6 +166,7 @@ nav a:hover::after{
     }
     .logos{
         width:4.2vh;
+        height: 4.1vh;
     }
 }
 .contactform{
