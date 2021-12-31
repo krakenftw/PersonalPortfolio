@@ -1,0 +1,210 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&family=Roboto:wght@100;300&family=Ubuntu:wght@500;700&display=swap');*{
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+
+#particles-js{
+    background: linear-gradient(to right, #8e2de2, #4a00e0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Ubuntu',sans-serif;
+}
+nav{
+    display:flex;
+    flex-direction:row;
+    width:30%;
+    justify-content:space-between;
+    margin:0 auto;
+    position:absolute;
+    top:10px;
+    left:37%;
+    
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    font-family:'Montserrat',sans-serif;
+    font-weight: 300;
+    width: auto;
+}
+nav a::after{
+    width:100%;
+    visibility: hidden;
+    content: "";
+    position: relative;
+    display: block;
+    height: 2px;
+    background-color: white;
+    transform: scale(0);
+    top: 2px;
+    transition: transform 0.3s ease-in-out;
+}
+nav a:hover::after{
+    visibility: visible;
+    transform: scale(1.0);
+}
+.header{ 
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-size: 5vmin;
+    font-weight: 900;
+    width: 80%;
+    margin-left: 10vw;
+    top: 35vh;
+}
+.header h3{
+    margin-top: 10px;
+    font-size: 4vmin;
+}
+.socials{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}   
+.logos{
+    width: 6.2vh;
+    height: 6.1vh;
+    font-size: 6vh;
+    color: white;
+    padding: 10px;
+    font-weight: 100;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.3);
+    border: 2px solid white;
+    margin: 18px;
+    transition: all 0.4s ease-out;
+}
+.logos:hover{
+    background: white;
+    color: #721ae1;
+    border: 2px solid transparent;
+    
+}
+.scrollarrow{
+    position: absolute;
+    bottom: 20px;
+    width: 60px;
+    font-size: 50px;
+    margin-left: 49%;
+    color: white;
+    opacity: 0.7;
+    animation-name:bounce ;
+    animation-iteration-count: infinite;
+    animation-duration: 0.4s;
+    animation-direction: alternate;
+}
+@keyframes bounce {
+    from {
+        margin-bottom: 15px;
+    }
+    to {
+        margin-bottom: 0px;
+    }
+}
+.aboutsection{
+    height: 95vh;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Montserrat',sans-serif;
+
+}
+.aboutsection h1,.contactsection h1{
+    font-size: 60px;
+    font-weight: 900;
+}
+.aboutcontent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    font-size: 30px;
+    padding:30px ;
+}
+.aboutcontent img{
+    width: max(300px,30%);
+}
+.aboutcontent h5{
+    width: 600px;
+}
+.contactsection{
+    background-color: #05AFF2;
+    width: 100%;
+    height: 94vh;
+    color: black;
+    font-family: 'Montserrat',sans-serif;
+    text-align: center;
+    padding-top: 30px;
+}
+.contactform{
+    width:max(40%,300px);
+    background:rgba(0, 0, 0, 0.4);
+    height:auto;
+    position:relative;
+    margin:auto;
+    margin-top:20vh;
+    border-radius:10px;
+    padding: 30px;
+}
+@media(max-width:900px){
+    .navbar{
+        display: none;
+
+    }
+    .aboutcontent{
+        margin-top: 6vh;
+        font-size: 20px;
+    }
+}
+.contactform{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.contactform input,textarea{
+    background: rgba(0,0,0,0.4);
+    color: white;
+    border-radius: 10px;
+    border: 0px solid white;
+    width: 20vw;
+    min-width: 200px;
+    height: 4vh;
+    margin: 5px;
+    padding: 4px;
+}
+.contactform textarea{
+    height: 8vh;
+    
+}
+.contactform .button{
+    color: white;
+    background: rgba(0,0,0,0.4);
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 4vh;
+    width:20vw ;
+    transition: all 0.3s ease-in-out;
+
+}
+.contactform .button:hover{
+    background: white;
+    color: black;
+}
+footer{
+    text-align: center;
+    font-family: 'Montserrat';
+    margin-top: auto;
+    background: rgba(0, 0, 0, 0.4);
+}
