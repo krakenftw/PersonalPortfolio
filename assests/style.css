@@ -164,6 +164,9 @@ nav a:hover::after{
         margin-top: 6vh;
         font-size: 20px;
     }
+    .logos{
+        width:3vh;
+    }
 }
 .contactform{
     text-align: center;
